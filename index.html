@@ -1,29 +1,108 @@
 ﻿
 <!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alien Decay - AR Exhibit</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 20px;
+            font-family: Arial, sans-serif;
+            background: #151515;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #aaaaaa;
+            margin-bottom: 40px;
+        }
+
+        .model-container {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .model-card {
+            background: #262626;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+        }
+
+        .model-card h2 {
+            margin-top: 0;
+        }
+
+        .model-card p {
+            color: #bbbbbb;
+        }
+
+        .model-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #a4d65e;
+            color: #151515;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        .model-button:hover {
+            background: #c1ed7b;
+        }
+    </style>
+
 </head>
 
 <body>
-  <a-scene>
-    <a-assets timeout="30000">
-      <a-asset-item id="paeshi" src="./Paeshi.glb"></a-asset-item>
-    </a-assets>
 
-    <a-camera position="0 0 5"></a-camera>
+    <h1>ALIEN DECAY</h1>
 
-    <a-gltf-model
-      src="#paeshi"
-      position="0 0 0"
-      rotation="0 0 0"
-      scale="1 1 1"
-      animation-mixer>
-    </a-gltf-model>
+    <p class="subtitle">
+        Augmented Reality Exhibit
+    </p>
 
-  </a-scene>
+    <div class="model-container">
+
+        <!-- PAESHI -->
+        <div class="model-card">
+
+            <h2>Paeshi</h2>
+
+            <p>Explore the Paeshi 3D model in augmented reality.</p>
+
+            <a class="model-button" href="./modelviewer/paeshi.html">
+                View Paeshi
+            </a>
+
+        </div>
+
+
+        <!-- KUANMAU -->
+        <div class="model-card">
+
+            <h2>KuanMau</h2>
+
+            <p>Explore the KuanMau 3D model in augmented reality.</p>
+
+            <a class="model-button" href="./modelviewer/kuanmau.html">
+                View KuanMau
+            </a>
+
+        </div>
+
+    </div>
+
 </body>
 </html>
