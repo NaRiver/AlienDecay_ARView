@@ -1,4 +1,48 @@
- <p>Rotate the model or select the AR button to view it in your surroundings.</p>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Paeshi - AR Exhibit</title>
+
+  <!-- Google Model Viewer -->
+  <script type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #eeeeee;
+      color: #222;
+      text-align: center;
+    }
+
+    h1 {
+      padding: 15px;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 75vh;
+      background-color: #eeeeee;
+    }
+
+    p {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Paeshi</h1>
+
+  <p>Rotate the model or select the AR button to view it in your surroundings.</p>
 
   <model-viewer
     src="./Paeshi.glb"
